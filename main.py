@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, session, render_template
-from authlib.integrations.flask_client import OAuth
+#from authlib.integrations.flask_client import OAuth
 #from google.cloud import secretmanager
 
 import os
