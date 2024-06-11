@@ -1,7 +1,8 @@
-from flask import Flask, session, render_template
-#from authlib.integrations.flask_client import OAuth
+from flask import Flask, redirect, url_for, session, render_template
+from authlib.integrations.flask_client import OAuth
 #from google.cloud import secretmanager
-#import os
+
+import os
 
 app = Flask(__name__)
 
@@ -35,17 +36,17 @@ def home():
     return render_template('home.html')
 
 @app.route('/onboardingHub')
-def onboarding_hub():
+def onboardingHub():
     user = session.get('user', None)
     return render_template('index.html', user=user)
 
 @app.route('/profile')
-def view_profile():
+def viewProfile():
     user = session.get('user', None)
     return render_template('profile.html', user=user)
 
 @app.route('/adminPanel')
-def view_admin_panel():
+def viewAdminPanel():
     return render_template('adminPanel.html')
 # @app.route('/login')
 # def login():
