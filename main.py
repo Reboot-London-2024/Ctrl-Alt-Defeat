@@ -48,6 +48,12 @@ def viewProfile():
 @app.route('/adminPanel')
 def viewAdminPanel():
     return render_template('adminPanel.html')
+
+
+
+@app.route('/requestAccess', methods = ['GET', 'POST'])
+def request_access():
+    return render_template('requested.html')
 # @app.route('/login')
 # def login():
 #     redirect_uri = url_for('authorize', _external=True)
