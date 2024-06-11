@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, session, render_template
 from authlib.integrations.flask_client import OAuth
-from google.cloud import secretmanager
+#from google.cloud import secretmanager
 
 import os
 
@@ -33,6 +33,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    return render_template('home.html')
+
+@app.route('/onboardingHub')
+def onboardingHub():
     user = session.get('user', None)
     return render_template('index.html', user=user)
 
@@ -40,6 +44,10 @@ def home():
 def viewProfile():
     user = session.get('user', None)
     return render_template('profile.html', user=user)
+
+@app.route('/adminPanel')
+def viewAdminPanel():
+    return render_template('adminPanel.html')
 # @app.route('/login')
 # def login():
 #     redirect_uri = url_for('authorize', _external=True)
