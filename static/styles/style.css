@@ -1,0 +1,489 @@
+@font-face
+{
+    font-family: 'mandatory-plaything-Regular';
+  src: url('mandatory-plaything-Regular.eot');
+  src: url('mandatory-plaything-Regular.eot?#') format('embedded-opentype'),
+      url('mandatory-plaything-Regular.woff') format('woff'),
+      url('mandatory-plaything-Regular.ttf') format('truetype');
+}
+#accessibilityToggle img{
+  height:40px;
+  cursor:pointer;
+}
+:root {
+	--cell-size: 100px;
+
+	--color: #81c3fd; /* for hover */
+	--color-set: #0275d8; /* when set */
+	--l: 10px; /* X line-width */
+}
+body{
+  background-color: #eaf0e1;
+}
+.onboarding_image{
+  width: 30%;
+  height:auto;
+  margin:auto;
+}
+
+.mainheading{
+  color:#00864f;
+  font-weight:bold;
+}
+.nav-link, a, h1, h2,h3{
+    font-family: 'mandatory-plaything-Regular';
+}
+
+.profileImage{
+  margin-right:10px;
+  float:right !important;
+  height: 60px;
+}
+
+/* Container holding the image and the text */
+.imgcontainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-top:5vh;
+    margin-bottom:5vh;
+ 
+  }
+
+.pbar{
+  width:80%;
+  border-radius:8px;
+  height:1vh;
+  display: black;
+  background-color: #000000;
+}
+.pbarperc{
+width:30%;
+  background-color: rgb(175, 67, 67);
+  height:1vh;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+}
+.pbarperc2{
+  width:60%;
+  background-color: rgb(104, 136, 99);
+  height:1vh;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+li{
+  list-style-type:square;
+}
+.card{
+  background-color:#EAF0E1;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+}
+.custom-shape-divider-bottom-1670812343 {
+  position: absolute;
+  width: 100%;
+  bottom:-15vh;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670812343 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 260px;
+}
+
+.custom-shape-divider-bottom-1670812343 .shape-fill {
+  fill: #3a4b40;
+}
+  .custom-shape-divider-bottom-1670788328 {
+
+    width: 100%;
+    margin-bottom:-2vh;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+
+.custom-shape-divider-bottom-1670788328 svg {
+    position: relative;
+    display: block;
+    width: calc(187% + 1.3px);
+    height: 173px;
+}
+
+.custom-shape-divider-bottom-1670788328 .shape-fill {
+    fill: 	 #EAF0E1;
+}
+.custom-shape-divider-bottom-1670808110 {
+  position: absolute;
+  width: 100%;
+  border-bottom:2px solid 	 #EAF0E1;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670808110 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 149px;
+}
+
+.custom-shape-divider-bottom-1670808110 .shape-fill {
+  fill: #9DB0A3;
+}
+path{
+  border: none !important;
+  outline:none !important;
+}
+.btn{
+  background-color: #eaf0e1;
+  color:	 #EAF0E1
+}
+.spacing{
+  margin:1%;
+}
+
+.ipadimg{
+    width:100%;
+     filter: blur(8px); 
+     min-height: 70vh;
+      max-height:80vh; 
+      object-fit:fill
+}
+.imgcontainer{
+    min-height:85vh;
+}
+.parentCon{
+    min-height:100vh;
+}
+.tablet{
+  background-color: 	 #EAF0E1;
+  margin-top:4%;
+  border-top: 15px solid #eaf0e1 !important;
+  border-bottom: 15px solid #eaf0e1 !important;
+  border-left:5px solid #eaf0e1 !important;
+  border-right:5px solid #eaf0e1 !important;
+  border-radius: 6px;
+  width:85%;
+  max-height: 85vh;
+  box-shadow: 0px 0px 12px #000000;
+}
+
+  .centered {
+    width:90%;
+    margin:auto;
+    padding-top:10px;
+    overflow-y: scroll;
+    max-height: 95%;
+
+  }
+  .centered::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+}
+.centered{
+    scrollbar-width: thin;
+   /* "auto" or "thin" */
+    scrollbar-color: rgb(26,24,29) rgb(255, 255, 255);
+   /* scroll thumb and track */
+}
+.centered::-webkit-scrollbar-track {
+    background:#eaf0e1;
+   /* color of the tracking area */
+    border-radius: 3px;
+}
+.centered::-webkit-scrollbar-thumb {
+    background-color: #EAF0E1;
+   /* color of the scroll thumb */
+    border-radius: 12px;
+   /* roundness of the scroll thumb */
+    border: 3px solid #EAF0E1;
+   /* creates padding around scroll thumb */
+    border-radius: 4px;
+}
+ /* Style the scrollbar for the body */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(26,24,29) rgb(255, 255, 255);
+}
+
+/* Styles for browsers that support webkit scrollbar styling */
+body::-webkit-scrollbar {
+  width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #eaf0e1;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #EAF0E1;
+  border-radius: 12px;
+  border: 3px solid #eaf0e1;
+}
+
+p, label{
+  font-family: "Arial, sans-serif";
+}
+ h1{
+  z-index:2;
+ }
+ .custom-shape-divider-bottom-1670857645 {
+  position: absolute;
+
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670857645 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 98px;
+}
+
+.custom-shape-divider-bottom-1670857645 .shape-fill {
+  fill:#00864f;
+}
+.vertical-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+@keyframes caranimation{
+  from{
+transform: translateY(-25vw);
+  }
+  to{
+
+transform: translateY(25vw);
+  }
+}
+.fa-terminal{
+  animation:blinker 3s forwards;
+}
+@keyframes blinker{
+  from{
+    filter:opacity(0)
+  }
+  to{
+    filter:opacity(1)
+  }
+}
+
+.ghost {
+  width:25%;
+  margin: auto;
+  animation: float 3s ease-out infinite;
+
+}
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 200px;
+  
+
+}
+/**{
+  border:1px solid red !important;
+}*/
+
+
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+.shadow ellipse {
+  transform-origin: center center;
+}
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+
+@keyframes fade{
+  from{
+    filter:opacity(0)
+  }
+  to{
+    filter:opacity(1)
+  }
+}
+/*.col-sm{
+  opacity: 0;
+}*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.topnav a.logo img {
+  height: 60px;
+  width: auto; 
+  vertical-align: middle; 
+}
+
+.topnav {
+  background-color: #00864f; /* Your existing navbar background */
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #EAF0E1;
+  text-align: center;
+  padding: 12px 16px; /* Adjust padding to better fit the logo */
+  text-decoration: none;
+  font-size: 17px;
+  position: relative; /* Ensure this is set */
+  z-index: 1; /* Ensures it's above any background elements */
+}
+.topnav a:not(.logo)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Start with no underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #FFF; /* Bright white for high contrast */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /* More pronounced shadow for depth */
+  transition: width 0.3s ease-in-out; /* Smooth transition for the animation */
+}
+
+/* Hover and active states with underline only for non-logo links */
+.topnav a:not(.logo):hover::after, .topnav a:not(.logo).active::after {
+  width: 100%; /* Full width underline on hover or active */
+}
+/* Ensure hover effects are visible */
+.topnav a:hover, .topnav a.active {
+  z-index: 2; /* Higher z-index on hover */
+}
+
+/* Responsive and icon styling unchanged */
+.topnav .icon {
+  display: none;
+  line-height: 50px; /* Aligns the height of the icon with the text links */
+  font-size: 20px; /* Slightly larger font size for better visibility and alignment */
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a.logo img {
+    height: 40px; 
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    position: relative;
+    padding: 14px 16px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .onboarding_image{
+    width:70%;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+.fa-bars{
+  cursor: pointer;
+  box-shadow:none!important;
+}
+*{
+  user-select: none;
+}
+.progress-container {
+  width: 80%;
+  margin: 20px auto; /* Centering the container */
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Basic styling for the progress bar container */
+.progress-bar {
+  width: 100%; /* Adjusted for better alignment */
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+/* Styling for the progress element with an animated gradient */
+.progress {
+  height: 100%;
+  background: linear-gradient(120deg, #4caf50, #81c784, #4caf50);
+  background-size: 200% 100%;
+  background-position: right;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  transition: width 0.4s ease-in-out, background-position 1s linear;
+}
+
+.progress:hover {
+  background-position: left;
+}

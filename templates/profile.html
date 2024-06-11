@@ -1,0 +1,51 @@
+{%extends "base.html"%}
+{%block title%} User Profile {%endblock%}
+{%block content%}
+<br/>
+<br/>
+<h1 class="text-center mainheading">Your Profile</h1>
+<br/>
+<br/>
+<div class="d-flex justify-content-center">
+    
+    <div class="tablet p-2" style="border-color:#3a4b40 !important;">
+        <div class="progress-container">
+            <label for="progress"><b>Onboarding Progress:</b></label>
+            <div class="progress-bar">
+                <div class="progress" id="progress" style="width: 50%;"></div>
+            </div>
+        </div>
+        <br/>
+        <div class ="container">
+        <div class="row">
+            <div class="col">
+        <p><b>Name:</b> </p>
+            </div>
+            <div class="col">
+                <p><b>Role:</b> </p>
+                    </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col">
+        <p><b>Line Manager:</b> </p>
+            </div>
+            <div class="col">
+                <p><b>Onboarding Deadline:</b> </p>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col">
+        <p><b>More Data:</b> </p>
+            </div>
+            
+            <div class="col">
+                <p><b>More Data:</b> </p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+{%endblock%}
