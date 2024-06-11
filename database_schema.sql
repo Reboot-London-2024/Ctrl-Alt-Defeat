@@ -4,6 +4,10 @@
 -- ------------------------------------------------------
 -- Server version	8.4.0
 
+
+CREATE DATABASE IF NOT EXISTS `OnboardingDB`;
+USE `OnboardingDB`;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -161,7 +165,6 @@ LOCK TABLES `TeamAccess` WRITE;
 /*!40000 ALTER TABLE `TeamAccess` DISABLE KEYS */;
 /*!40000 ALTER TABLE `TeamAccess` ENABLE KEYS */;
 UNLOCK TABLES;
-
 --
 -- Table structure for table `Teams`
 --
@@ -277,4 +280,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+
 -- Dump completed on 2024-06-11 11:36:04
+
+
