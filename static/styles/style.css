@@ -34,6 +34,9 @@ body{
     font-family: 'mandatory-plaything-Regular';
 }
 
+*{
+  font-family: Tahoma;
+}
 .profileImage{
   margin-right:10px;
   float:right !important;
@@ -78,6 +81,7 @@ li{
 .card{
   background-color:#EAF0E1;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+  margin:10px 0 10px 0;
 }
 .custom-shape-divider-bottom-1670812343 {
   position: absolute;
@@ -142,8 +146,7 @@ path{
   outline:none !important;
 }
 .btn{
-  background-color: #eaf0e1;
-  color:	 #EAF0E1
+  background-color: #00864f;
 }
 .spacing{
   margin:1%;
@@ -171,7 +174,6 @@ path{
   border-right:5px solid #eaf0e1 !important;
   border-radius: 6px;
   width:85%;
-  max-height: 85vh;
   box-shadow: 0px 0px 12px #000000;
 }
 
@@ -179,55 +181,53 @@ path{
     width:90%;
     margin:auto;
     padding-top:10px;
-    overflow-y: scroll;
-    max-height: 95%;
+    overflow-y: none;
 
   }
-  .centered::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 4px;
-}
-.centered{
-    scrollbar-width: thin;
-   /* "auto" or "thin" */
-    scrollbar-color: rgb(26,24,29) rgb(255, 255, 255);
-   /* scroll thumb and track */
-}
-.centered::-webkit-scrollbar-track {
-    background:#eaf0e1;
-   /* color of the tracking area */
-    border-radius: 3px;
-}
-.centered::-webkit-scrollbar-thumb {
-    background-color: #EAF0E1;
-   /* color of the scroll thumb */
-    border-radius: 12px;
-   /* roundness of the scroll thumb */
-    border: 3px solid #EAF0E1;
-   /* creates padding around scroll thumb */
-    border-radius: 4px;
-}
- /* Style the scrollbar for the body */
-body {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(26,24,29) rgb(255, 255, 255);
+/* Style the scrollbar for elements with class 'centered' */
+.centered {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: rgb(26, 24, 29) rgb(255, 255, 255); /* scroll thumb and track */
 }
 
-/* Styles for browsers that support webkit scrollbar styling */
+.centered::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  border-radius: 4px; /* Rounded corners for the scrollbar */
+}
+
+.centered::-webkit-scrollbar-track {
+  background: #EAF0E1; /* Color of the tracking area */
+  border-radius: 4px; /* Rounded corners for the track */
+}
+
+.centered::-webkit-scrollbar-thumb {
+  background-color: #1A181D; /* Color of the scroll thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 2px solid #EAF0E1; /* Border around the scroll thumb */
+}
+
+/* Style the scrollbar for the body */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(26, 24, 29) rgb(255, 255, 255);
+}
+
 body::-webkit-scrollbar {
-  width: 12px; 
+  width: 12px;
+  border-radius: 6px; /* More pronounced rounded corners for the body scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #eaf0e1;
-  border-radius: 3px;
+  background: #EAF0E1;
+  border-radius: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #EAF0E1;
-  border-radius: 12px;
-  border: 3px solid #eaf0e1;
+  background-color: #1A181D;
+  border-radius: 6px;
+  border: 3px solid #EAF0E1;
 }
+
 
 p, label{
   font-family: "Arial, sans-serif";
