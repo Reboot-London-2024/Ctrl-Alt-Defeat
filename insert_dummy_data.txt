@@ -1,0 +1,76 @@
+-- JobRoles
+INSERT INTO JobRoles (JobRoleID, JobRoleName) VALUES
+(1, 'Software Engineer'),
+(2, 'Data Scientist'),
+(3, 'DevOps Engineer');
+
+-- Teams
+INSERT INTO Teams (TeamID, TeamName) VALUES
+(1, 'Intelligent Automation Platform'),
+(2, 'Transport Platform'),
+(3, 'Digital Frameworks Platform');
+
+-- Software
+INSERT INTO Software (SoftwareID, SoftwareName) VALUES
+(1, 'VSCode'),
+(2, 'Python'),
+(3, 'Slack'),
+(4, 'Docker');
+
+-- AccessTypes
+INSERT INTO AccessTypes (AccessTypeID, AccessTypeName) VALUES
+(1, 'Shared Drive Access'),
+(2, 'GitHub Repo Access'),
+(3, 'JIRA Access');
+
+-- JobRoleSoftware
+INSERT INTO JobRoleSoftware (JobRoleID, SoftwareID) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 2),
+(2, 3),
+(3, 3),
+(3, 4);
+
+-- JobRoleAccess
+INSERT INTO JobRoleAccess (JobRoleID, AccessTypeID) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(2, 3),
+(3, 1),
+(3, 2);
+
+-- TeamSoftware
+INSERT INTO TeamSoftware (TeamID, SoftwareID) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 2),
+(2, 3),
+(3, 3),
+(3, 4);
+
+-- TeamAccess
+INSERT INTO TeamAccess (TeamID, AccessTypeID) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(2, 3),
+(3, 1),
+(3, 2);
+
+-- TrainingModules
+INSERT INTO TrainingModules (TrainingID, TrainingName) VALUES
+(1, 'Onboarding Training'),
+(2, 'Security Training'),
+(3, 'Compliance Training');
+
+-- Users
+INSERT INTO Users (UserID, FirstName, LastName, JobRoleID, TeamID, LineManagerID, IsLineManager) VALUES
+(1, 'Alice', 'Smith', 1, 1, NULL, TRUE),
+(2, 'Bob', 'Johnson', 2, 2, 1, FALSE),
+(3, 'Carol', 'Williams', 3, 3, 1, FALSE),
+(4, 'David', 'Brown', 1, 2, 2, FALSE),
+(5, 'Eve', 'Davis', 2, 3, 3, FALSE);
